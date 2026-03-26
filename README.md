@@ -436,11 +436,13 @@ La práctica permitió comprender de manera integral el proceso de adquisición 
 
 ## Bibliografía
 
-1. J. L. Apfelbaum, C. Chen, S. S. Mehta y T. J. Gan, “Postoperative pain experience: results from a national survey suggest postoperative pain continues to be undermanaged,” *Anesthesia & Analgesia*, vol. 97, no. 2, pp. 534–540, 2003.
 
-2. T. Ledowski, “Objective monitoring of nociception: a review of current commercial solutions,” *British Journal of Anaesthesia*, vol. 123, no. 2, pp. e312–e321, 2019.
+[1]	Sciencedirect.com. [En línea]. Disponible en: https://www.sciencedirect.com/topics/medicine-and-dentistry/cold-pressor-test. [Consultado: 26-mar-2026].
 
-3. V. Bonhomme, K. Uutela, G. Hans, I. Maquoi, J. D. Born y J. F. Brichant, “Comparison of the Surgical Pleth Index™ with haemodynamic variables to assess nociception-anti-nociception balance during general anaesthesia,” *British Journal of Anaesthesia*, vol. 106, no. 1, pp. 101–111, 2011.
+[2]	Wikipedia contributors, “Serial Peripheral Interface”, Wikipedia, The Free Encyclopedia, 13-mar-2026. [En línea]. Disponible en: https://en.wikipedia.org/w/index.php?title=Serial_Peripheral_Interface&oldid=1343364517.
+
+[3]	S. Guerrero-Zúñiga et al., “No title”, Org.mx, 2016. [En línea]. Disponible en: https://www.scielo.org.mx/scielo.php?pid=S0028-37462016000400296&script=sci_abstract&tlng=pt. [Consultado: 26-mar-2026].
+
 
 4. M. Huiku, K. Uutela, M. van Gils, I. Korhonen, M. Kymäläinen, P. Meriläinen, M. Paloheimo, M. Rantanen, P. Takala, H. Viertiö-Oja y A. Yli-Hankala, “Assessment of surgical stress during general anaesthesia,” *British Journal of Anaesthesia*, vol. 98, no. 4, pp. 447–455, 2007.
 
