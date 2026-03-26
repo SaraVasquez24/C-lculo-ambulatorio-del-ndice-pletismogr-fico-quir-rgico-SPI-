@@ -437,12 +437,11 @@ La práctica permitió comprender de manera integral el proceso de adquisición 
 ## Bibliografía
 
 
-[1]	Sciencedirect.com. [En línea]. Disponible en: https://www.sciencedirect.com/topics/medicine-and-dentistry/cold-pressor-test. [Consultado: 26-mar-2026].
+1.	Sciencedirect.com. [En línea]. Disponible en: https://www.sciencedirect.com/topics/medicine-and-dentistry/cold-pressor-test. [Consultado: 26-mar-2026].
 
-[2]	Wikipedia contributors, “Serial Peripheral Interface”, Wikipedia, The Free Encyclopedia, 13-mar-2026. [En línea]. Disponible en: https://en.wikipedia.org/w/index.php?title=Serial_Peripheral_Interface&oldid=1343364517.
+2.	Wikipedia contributors, “Serial Peripheral Interface”, Wikipedia, The Free Encyclopedia, 13-mar-2026. [En línea]. Disponible en: https://en.wikipedia.org/w/index.php?title=Serial_Peripheral_Interface&oldid=1343364517.
 
-[3]	S. Guerrero-Zúñiga et al., “No title”, Org.mx, 2016. [En línea]. Disponible en: https://www.scielo.org.mx/scielo.php?pid=S0028-37462016000400296&script=sci_abstract&tlng=pt. [Consultado: 26-mar-2026].
-
+3.	S. Guerrero-Zúñiga et al., “No title”, Org.mx, 2016. [En línea]. Disponible en: https://www.scielo.org.mx/scielo.php?pid=S0028-37462016000400296&script=sci_abstract&tlng=pt. [Consultado: 26-mar-2026].
 
 4. M. Huiku, K. Uutela, M. van Gils, I. Korhonen, M. Kymäläinen, P. Meriläinen, M. Paloheimo, M. Rantanen, P. Takala, H. Viertiö-Oja y A. Yli-Hankala, “Assessment of surgical stress during general anaesthesia,” *British Journal of Anaesthesia*, vol. 98, no. 4, pp. 447–455, 2007.
 
