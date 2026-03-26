@@ -57,6 +57,8 @@ Desde la perspectiva de la instrumentación biomédica, el sistema propuesto en 
 
 En conjunto, el estudio de la señal PPG y del SPI permite comprender cómo variables fisiológicas complejas pueden ser estimadas a partir de mediciones no invasivas, destacando la importancia de integrar conocimientos de fisiología, electrónica y procesamiento digital de señales en el desarrollo de sistemas biomédicos confiables.
 
+<img width="470" height="500" alt="image" src="https://github.com/user-attachments/assets/146364ab-f2ae-41a8-8349-f4559f6bd1fd" />
+
 
 ## Materiales utilizados
 
