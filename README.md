@@ -455,3 +455,6 @@ La práctica permitió comprender de manera integral el proceso de adquisición 
 
 <img width="1146" height="542" alt="image" src="https://github.com/user-attachments/assets/fe0ebd48-eabc-4b37-b59b-e40d72b8676d" />
 
+<img width="627" height="505" alt="image" src="https://github.com/user-attachments/assets/3f817391-c0e8-42ee-9856-1e234d414ea7" />
+
+
