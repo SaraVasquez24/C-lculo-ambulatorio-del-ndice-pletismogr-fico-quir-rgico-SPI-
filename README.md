@@ -65,37 +65,34 @@ Desde el punto de vista de la instrumentación biomédica, el sistema propuesto 
 
 ## Metodología
 
+
 ### 1. Preparación del sistema
 
-Inicialmente se verificó la disponibilidad de los elementos necesarios para la práctica. En lugar de construir el circuito de acondicionamiento propuesto en la guía, se decidió trabajar con un módulo sensor de pulso ya ensamblado. Esta decisión permitió reducir el tiempo de montaje y disminuir posibles errores asociados a conexiones incorrectas o desajustes en la etapa analógica.
+Inicialmente se verificó la disponibilidad de los elementos necesarios para la práctica. En lugar de construir el circuito de acondicionamiento propuesto en la guía, se decidió trabajar con un módulo sensor de pulso ya ensamblado. Esta decisión permitió reducir el tiempo de montaje y disminuir posibles errores asociados a conexiones incorrectas o desajustes en la etapa analógica, aunque también limitó el análisis detallado del comportamiento electrónico del sistema.
 
 ### 2. Conexión del módulo al Arduino
 
-El módulo fue conectado a la placa ESP32 utilizando una entrada analógica para la lectura de la señal. También se realizaron las conexiones de alimentación y tierra correspondientes. Posteriormente se verificó que la señal pudiera observarse de manera preliminar mediante herramientas como el **Serial Plotter**.
+El módulo fue conectado a la placa ESP32 utilizando una entrada analógica para la lectura de la señal, junto con las respectivas conexiones de alimentación y tierra. Posteriormente se verificó el funcionamiento del sistema observando la señal de manera preliminar mediante herramientas como el **Serial Plotter**, confirmando la presencia de una señal pulsátil.
 
 ### 3. Adquisición de la señal
 
-Se colocó el dedo de uno de los integrantes sobre el sensor óptico, procurando mantener una posición estable para reducir artefactos por movimiento. Se observó la señal obtenida y se verificó que presentara un comportamiento pulsátil coherente con la actividad cardíaca.
+Se colocó el dedo de uno de los integrantes sobre el sensor óptico, procurando mantener una posición estable para reducir artefactos por movimiento y variaciones en la presión. La adquisición se realizó durante un tiempo total de **120 segundos**, distribuidos en tres etapas: los primeros **40 segundos en reposo**, los siguientes **40 segundos durante la aplicación del *cold pressor test*** (inmersión en frío), y los últimos **40 segundos nuevamente en reposo**. Durante todo el proceso se verificó que la señal presentara un comportamiento pulsátil coherente con la actividad cardíaca.
 
 ### 4. Procesamiento en MATLAB
 
-Se desarrolló un código en MATLAB para capturar la señal proveniente del Arduino durante un intervalo determinado. El programa permitió:
+Se desarrolló un código en MATLAB para capturar la señal proveniente del Arduino durante el intervalo definido. El programa permitió realizar una calibración inicial para centrar la señal, aplicar corrección de línea base y filtrado digital para reducir ruido, e implementar un algoritmo de detección de picos basado en el método del “alpinista” con umbral adaptativo. A partir de la detección de picos, se segmentó la señal pulso a pulso y se calcularon los valores de máximo (Hmax) y mínimo (Hmin) para cada latido, con los cuales se estimó el índice pletismográfico.
 
-- Leer la señal en tiempo real.
-- Detectar máximos y mínimos asociados a cada pulso.
-- Estimar parámetros de interés a partir de la señal capturada.
-- Calcular el SPI para cada pulsación o intervalo definido.
-- Visualizar la evolución temporal del índice.
+Sin embargo, se identificó un error en el algoritmo, ya que la detección de picos no se realizaba correctamente pulso a pulso, lo que generó inconsistencias en la segmentación de los latidos. Como consecuencia, el cálculo del SPI no fue representativo y no reflejó adecuadamente las variaciones fisiológicas esperadas.
 
 ### 5. Registro experimental
 
-La captura se realizó durante un tiempo finito establecido por el grupo. Durante este intervalo se analizaron las características de la señal en estado de reposo y, en caso de realizarse una maniobra de estimulación fisiológica, se comparó el comportamiento del SPI antes, durante y después del estímulo.
+Durante la adquisición se registraron los datos correspondientes a las tres fases del experimento. Aunque se esperaba observar cambios en el SPI durante el *cold pressor test*, debido a la respuesta del sistema nervioso autónomo, el sistema no evidenció variaciones significativas en el índice, lo cual se asocia directamente con las limitaciones del algoritmo de procesamiento implementado.
 
 ### 6. Análisis
 
-Finalmente, se interpretaron los resultados obtenidos teniendo en cuenta el comportamiento fisiológico esperado del sistema nervioso autónomo y las limitaciones del montaje utilizado.
+Finalmente, los resultados fueron analizados considerando el comportamiento fisiológico esperado y las limitaciones del sistema desarrollado. Se concluyó que, aunque la señal PPG fue correctamente adquirida, la falta de una detección precisa de picos y de un cálculo adecuado del SPI afectó la interpretación de los resultados, evidenciando la importancia de un procesamiento digital robusto en sistemas biomédicos.
 
----
+
 
 ## Descripción de lo que se hizo
 
@@ -109,7 +106,7 @@ A continuación, se implementó un algoritmo de detección de picos basado en el
 Adicionalmente, el sistema permitió visualizar en tiempo real la señal cruda, la señal PPG invertida y la señal filtrada, así como mostrar en consola los valores calculados para cada latido. De esta manera, se logró cumplir con el propósito principal de la práctica desde una aproximación funcional, integrando la adquisición, el procesamiento digital y la interpretación básica de la señal, aunque con diferencias respecto al montaje original propuesto en la guía.
 
 
-###Código implementado con las inconsistencias previamente explicadas:
+### Código implementado con las inconsistencias previamente explicadas:
 ```
 clear
 close all
